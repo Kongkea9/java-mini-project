@@ -1,14 +1,12 @@
 package model;
 
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
-
 import java.util.List;
 
-
 @Data
-@JsonIgnoreProperties(ignoreUnknown = true)
 public class ReviewResponse {
+    private int page;
+    private int totalPages;
+    private int totalResults;
     private List<Review> results;
 }

@@ -16,7 +16,7 @@ public class Spinner implements Runnable {
         int i = 0;
 
         while (running) {
-            System.out.print("\r⏳ Loading " + spin[i++ % spin.length]);
+            System.out.print("\r Loading " + spin[i++ % spin.length]);
             try {
                 Thread.sleep(120);
             } catch (Exception ignored) {}
